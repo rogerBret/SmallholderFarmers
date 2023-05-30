@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: #ffffff00;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+form {
+  background-color: white;
+  width: 33%;
+  height: 90%;
+  padding: 1rem;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-right: auto;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.5rem;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 2px solid black;
+  transition: border 0.3s;
+}
+
+.input-error {
+  border: 2px solid rgb(223, 32, 32);
+}
+
+input:hover,
+input:focus {
+  border: 2px solid rgb(3, 94, 136);
+}
+
+button {
+  margin-top: auto;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--primary-orange);
+  border-radius: 12px;
+  border: 2px solid black;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(3, 94, 136, 0.9);
+}
+
+.error-message {
+  color: rgb(223, 32, 32);
+  font-weight: 500;
+}
