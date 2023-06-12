@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" >
-      <div className="container">
+      <div className="container-fluid">
         <h1>
           Home page here..
         </h1>
