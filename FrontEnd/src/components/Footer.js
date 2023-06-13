@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start '>
+    <MDBFooter bgColor='rgba(0, 0, 0, 0.05)' className='text-center text-lg-start '>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
@@ -120,7 +120,7 @@ export default function Footer() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         <a href="#HeaderSection"><span className="bi bi-chevron-up arrow">  </span></a>
-        <h6> © 2023 Copyright:Designed by <a href='' className='green'>ChrisAfrotech</a> </h6>
+        <p> © 2023 Copyright: Designed by <a href='' className='green'>ChrisAfrotech</a> </p>
       </div>
     </MDBFooter>
   );
