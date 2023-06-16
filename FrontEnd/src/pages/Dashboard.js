@@ -1,20 +1,13 @@
 import React from 'react'
 import '../App.css'
-import {Space} from "antd";
-import HeaderDb from '../components/HeaderDb';
-import SideMenuDb from '../components/SideMenuDb';
-import PageContentDb from '../components/PageContentDb';
-import FooterDb from '../components/FooterDb';
+import SidebarSection from '../components/SidebarSectionDb/SidebarSection';
+import BodySection from '../components/BodySectionDb/BodySection';
 
 const Dashboard = () => {
   return (
-    <div className='Dashboard'>
-      <HeaderDb />
-        <Space>
-            <SideMenuDb />
-            <PageContentDb />
-        </Space>
-      {/* <FooterDb /> */}
+    <div className='containerDb'>
+      <SidebarSection />
+      <BodySection /> 
     </div>
   )
 }
