@@ -4,10 +4,12 @@ import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {TbMessageCircle} from 'react-icons/tb'
 import {MdOutlineNotificationsNone} from 'react-icons/md'
+import {BsArrowRightShort} from 'react-icons/bs'
 
 /*******Imported images***********/
 import img from '../../assets/profile.png'
 import video from '../../assets/Farm2.gif'
+import imgTomato from '../../assets/tomato.png'
 
 const TopSection = () => {
   return (
@@ -44,7 +46,31 @@ const TopSection = () => {
             <img src={video} alt='gif'></img>
           </div>
         </div>
+        <div className='leftCard flex'>
+          <div className='main flex'>
+            <div className='textDiv row'>
+              <h1>my stat</h1>
+              <div className='flex col'>
+                <span>
+                  Today <br/> <small>4 orders</small>
+                </span>
+              </div>
+              <div className='flex col'>
+                <span>
+                  This month <br/> <small>125 orders</small>
+                </span>
+              </div>
+              <span className='flex link'>
+                Go to my orders <BsArrowRightShort className='icon'/>
+              </span>
+            </div>
+
+            <div className='imgDiv'>
+              <img src={imgTomato} alt='imgName'/> 
+            </div>
+        </div>
       </div>
+    </div>
     </div>
   )
 }

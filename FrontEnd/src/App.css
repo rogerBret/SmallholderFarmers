@@ -595,7 +595,66 @@ img{
   color: var(--primaryColor);
 }
 
+/***********leftcard*******************/
+.leftCard {
+  flex-basis: 50%;
 
-
+  height: 200px; 
+}
+.leftcard .main{
+  position: relative;
+  padding: 1rem;
+  height: 200px; 
+  background: var(--primary-green);
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+.leftcard .main ::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--primary-green);
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem ;
+}
+.textDiv{
+  z-index: 100;
+}
+.textDiv h1{
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.textDiv .flex{
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.textDiv .flex small{
+  font-size: var(--normalFontSize);
+  display: block;
+  color: var(--primary-green);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.textDiv .link{
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.textDiv .link:hover{
+  color: var(--primary-green);
+}
+.textDiv .link .icon{
+  transform: translateX(10px);
+  transition: .3s ease;
+}
+.imgDiv{
+  transform: translateY(-2px);
+}
+.imgDiv img{
+  width: 200px;
+}
 
 
