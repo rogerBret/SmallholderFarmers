@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 
 const Menunavbar = () => {
   return (
@@ -37,7 +38,13 @@ const Menunavbar = () => {
            </ul>
          </div>
           <div className="d-flex ">
-            <Button className="mx-4" variant="outline-success">Login</Button>
+            <Button className="mx-4" variant="outline-success">
+                <Link to={"../Login"}>
+                    <span className='green'>
+                        Log In
+                    </span>
+                </Link>
+            </Button>
             <Button variant="success">SignUp</Button>
           </div>
           </Nav>

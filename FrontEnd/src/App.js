@@ -8,6 +8,8 @@ import Blogs from "./pages/Blogs";
 import Login from "./pages/Login";
 import NoPage from "./pages/Nopage";
 import Dashboard from "./pages/Dashboard";
+import Inventory from "./pages/Inventory";
+import Culture from "./pages/Culture";
 
 export default function App() {
   return (
@@ -19,6 +21,9 @@ export default function App() {
           <Route path="Login" element={<Login />} />
           <Route path="*" element={<NoPage />} />
           <Route path="dashboard" element={<Dashboard/>}/>
+          <Route path="inventory" element={<Inventory/>}/>
+          <Route path="culture" element={<Culture/>}/>
+
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import imgLogin from '../assets/imgLogin.jpg'
+import imgLogin from '../assets/imageHead.png'
+ import { Link } from 'react-router-dom'
 
 function Login() {
   const {
@@ -11,14 +12,14 @@ function Login() {
     formState: { errors },
   } = useForm();
   return (
-    <div className="container col">
-        <div className="fromr">
-              <form
+    <div className="containerLogin">
+        <div className="fromLogin">
+          <form className="formulair"
             onSubmit={handleSubmit(() =>
               console.log("user registered successfully!")
             )}
           >
-            <h3>Sign Up</h3>
+            <h3>Hello!</h3>
             {/* email */}
             <div className="input">
               <p className="error-message">{errors.email?.message}</p>
@@ -55,7 +56,7 @@ function Login() {
               />
             </div>
 
-            {/* confirm password */}
+            {/* confirm password
             <div className="input">
               <p className="error-message">{errors.confirmPassword?.message}</p>
               <label htmlFor="confirmPassword">Confirm Password</label>
@@ -71,14 +72,20 @@ function Login() {
                 id="confirmPassword"
                 className={`${errors.confirmPassword && "input-error"}`}
               />
-            </div>
+            </div> */}
 
             {/* button */}
-            <button>SIGN UP</button>
+            <button className="buitn my-4">
+                <Link to={"../Inventory"}>
+                        <span className='white'>
+                            Login
+                        </span>
+                </Link>
+            </button>
           </form>
         </div>
         <div className="imgLogin">
-            <img src={imgLogin} alt='imageHead'></img>
+            <img src={imgLogin} alt='imageLog'></img>
         </div>
     </div>
   );

@@ -11,6 +11,7 @@ import {BiPieChart} from 'react-icons/bi';
 import {FiPackage} from 'react-icons/fi';
 import {BiQuestionMark} from 'react-icons/bi';
 import {BiLogOut} from 'react-icons/bi';
+ import { Link } from 'react-router-dom'
 
 
 const SidebarSection = () => {
@@ -18,7 +19,13 @@ const SidebarSection = () => {
     <div className='sideBar grid'>
       <div className='logoDiv flex'>
         <img className='imgLogo' src={logo} alt='logoImage' />
-        <h2>Farmers <span className='green'>.</span></h2>
+        <h2><Link to={"../Dashboard"}>
+                        <span className='green'>
+                            Farmers
+                        </span>
+                    </Link>
+             <span className='green'>.</span>
+        </h2>
       </div>
     <div className='menuDiv'>
         <h3 className='divTitle'>
@@ -26,27 +33,33 @@ const SidebarSection = () => {
         </h3>
         <ul className='menuLists grid'>
             <li className='listItem'>
-                <a href='#' className='menuLink flex'>
+                <a href='#' className='menuLink flex' active >
                 <BiAlignLeft className='icon' /> 
-                <span >
-                    Dashboard
-                </span>
+                     <Link to={"../Dashboard"}>
+                        <span className='green'>
+                            Dashboard
+                        </span>
+                    </Link>
                 </a>
             </li>
             <li className='listItem'>
                 <a href='#' className='menuLink flex'>
                 <BiBook />
-                <span >
-                    Inventory
-                </span>
+                    <Link to={"../Inventory"}>
+                        <span className='green'>
+                            Inventory
+                        </span>
+                    </Link>
                 </a>
             </li>
             <li className='listItem'>
                 <a href='#' className='menuLink flex'>
                 <FiFeather className='icon' /> 
-                <span >
-                    culture
-                </span>
+                <Link to={"../Culture"}>
+                        <span className='green'>
+                            Culture
+                        </span>
+                    </Link>
                 </a>
             </li>
              <li className='listItem'>
